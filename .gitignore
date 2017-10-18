@@ -1,0 +1,17 @@
+*~
+.gradle
+*.apk
+.*.swp
+.idea
+*.iml
+.DS_Store
+.settings
+local.properties
+project.properties
+out
+build
+gen
+bin
+gen-external-apklibs
+target
+classes
