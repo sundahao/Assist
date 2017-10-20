@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_download_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qgd.yfb.assist.AppUpdateActivity">
+
+
+   <LinearLayout
+       android:layout_marginTop="50dp"
+       android:orientation="horizontal"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="1160dp"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_gravity="center_vertical"
+           android:id="@+id/tv_update_message"
+           android:text="0个应用安装，成功0个，失败0个"
+           android:textSize="32sp"
+           android:textColor="#fff"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:textColor="#fff"
+           android:layout_marginLeft="15dp"
+           android:layout_gravity="center_vertical"
+           android:text="("
+           android:textSize="22sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:textColor="#ff5d00"
+           android:layout_gravity="center_vertical"
+           android:text="提示："
+           android:textSize="22sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:textColor="#fff"
+           android:layout_gravity="center_vertical"
+           android:text="系统正在升级应用，升级完成之前请不要做任何操作）"
+           android:textSize="22sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:focusable="false"
+        android:id="@+id/rv_update_message"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="1160dp"
+        android:paddingBottom="15dp"
+        android:layout_height="480dp">
+        
+    </android.support.v7.widget.RecyclerView>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icon_direction_lower"
+        android:id="@+id/iv_more_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_ok_continue"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp"
+        android:textColor="#ff5d00"
+        android:text="按OK键返回桌面"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+    </TextView>
+
+
+
+
+
+</LinearLayout>

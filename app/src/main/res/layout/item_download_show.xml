@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="1100dp"
+              android:layout_marginLeft="30dp"
+              android:focusable="true"
+              android:clickable="true"
+              android:layout_height="70dp">
+
+    <ImageView
+        android:layout_marginLeft="54dp"
+        android:id="@+id/iv_update_item_icon"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+
+        android:id="@+id/tv_update_item_verson"
+        android:layout_marginLeft="22dp"
+        android:layout_gravity="center_vertical"
+        android:text="应用名称+应用版本号"
+        android:textSize="28sp"
+        android:textColor="#fff"
+        android:layout_width="534dp"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/pb_update_item"
+       android:layout_gravity="center_vertical"
+        android:progress="30"
+        android:progressDrawable="@drawable/progressbar_load"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="20dp"/>
+    
+    <TextView
+        android:layout_marginLeft="33dp"
+        android:layout_gravity="center_vertical"
+        android:text="正在下载"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        android:id="@+id/tv_update_item_status"
+        android:layout_width="112dp"
+        android:layout_height="40dp"/>
+
+
+</LinearLayout>
